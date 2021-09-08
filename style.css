@@ -131,7 +131,7 @@ p {
 }
 
 .form-container {
-    padding: 1.5rem;
+    padding: 3rem;
     border: 1px solid var(--clr-grey-1)
 }
 
@@ -192,25 +192,33 @@ button a {
     color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media ( max-width: 1025px) {
+    .btn-row {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1440px) {
     .update-container,
     {
         width: 70% !important;
+    }
+    .btn-row {
+        position: relative;
+        left: 50%;
+        width: 40% !important;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
     }
 }
 
 .update-container {
     margin-top: 2rem;
     width: 80% !important;
-}
-
-.btn-row {
-    position: relative;
-    left: 50%;
-    width: 30% !important;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
 }
 
 .submit-btn,
